@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="eseller is a considered library of beautiful digital books for curious minds." />
+    <title>eseller | Digital books for curious minds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="eseller home"><span class="wordmark-mark">✦</span> eseller<span class="wordmark-dot">.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#new">New & noteworthy</a>
+        <a href="#library">The library</a>
+        <a href="#about">About us</a>
+      </nav>
+      <button class="basket-button" id="basketButton" type="button" aria-label="Open basket">
+        <span>Basket</span><span class="basket-count" id="basketCount">0</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent digital publishing</p>
+          <h1>Good books for<br /><em>wide awake</em> minds.</h1>
+          <p class="hero-description">Thoughtful eBooks for the moments when you want to go deeper, see differently, and make a little more sense of the world.</p>
+          <a class="text-link" href="#library">Explore the library <span>↗</span></a>
+        </div>
+        <div class="hero-art" aria-label="Stacked editorial book covers">
+          <div class="sun-disc"></div>
+          <div class="hero-note">Issue 01<br /><span>New ways<br />of seeing</span></div>
+          <div class="hero-book hero-book-back"><span>THE ART OF<br /><i>NOTICING</i></span><small>ESELLER EDITIONS</small></div>
+          <div class="hero-book hero-book-front"><span>MAKE<br /><i>SPACE</i></span><small>AN ESSAY ON ATTENTION</small><b>01</b></div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="eseller values">
+        <span>READ SLOWLY</span><i>✦</i><span>THINK DEEPLY</span><i>✦</i><span>LIVE CURIOUSLY</span><i>✦</i><span>READ SLOWLY</span>
+      </section>
+
+      <section class="feature-section" id="new">
+        <div class="section-heading">
+          <p class="eyebrow">Editor’s pick · 01</p>
+          <h2>Tiny changes.<br /><em>Remarkable results.</em></h2>
+        </div>
+        <div class="feature-content">
+          <div class="feature-cover"><span>ATOMIC<br /><strong>HABITS</strong></span><small>JAMES CLEAR<br />ESELLER EDITIONS</small><div class="cover-spark">✦</div></div>
+          <div class="feature-details">
+            <p class="feature-kicker">Featured ebook / Self-improvement</p>
+            <p class="feature-intro">“Small habits can make a meaningful difference.”</p>
+            <p>A practical guide to building better habits, breaking bad ones, and making small improvements that compound into remarkable results.</p>
+            <div class="purchase-row">
+              <div><strong class="price">₹99</strong><span class="format">eBook · PDF</span></div>
+              <button class="primary-button buy-button" data-title="Atomic Habits" data-price="99" data-currency="₹" type="button">Get the book <span>→</span></button>
+            </div>
+            <div class="detail-list"><span>Instant delivery</span><span>DRM-free</span><span>Read anywhere</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-section" id="library">
+        <div class="library-top"><div><p class="eyebrow">Browse the collection</p><h2>Small books.<br /><em>Big ideas.</em></h2></div><p class="library-note">A growing shelf of books made for a slower, more curious internet.</p></div>
+        <div class="book-grid">
+          <article class="book-card"><div class="mini-cover cover-blue"><span>THE<br /><i>QUIET</i><br />HOUR</span><small>NOTES ON REST</small></div><div class="book-meta"><h3>The Quiet Hour</h3><p>Notes on rest</p><strong>$9.00</strong><button class="small-buy buy-button" data-title="The Quiet Hour" data-price="9.00" data-currency="$" type="button">Add to basket <span>+</span></button></div></article>
+          <article class="book-card"><div class="mini-cover cover-yellow"><span>OTHER<br /><i>PEOPLE’S</i><br />HOUSES</span><small>STORIES OF BELONGING</small></div><div class="book-meta"><h3>Other People’s Houses</h3><p>Stories of belonging</p><strong>$11.00</strong><button class="small-buy buy-button" data-title="Other People's Houses" data-price="11.00" data-currency="$" type="button">Add to basket <span>+</span></button></div></article>
+          <article class="book-card"><div class="mini-cover cover-red"><span>HOW TO<br /><i>BEGIN</i><br />AGAIN</span><small>A PRACTICAL MANIFESTO</small></div><div class="book-meta"><h3>How to Begin Again</h3><p>A practical manifesto</p><strong>$8.00</strong><button class="small-buy buy-button" data-title="How to Begin Again" data-price="8.00" data-currency="$" type="button">Add to basket <span>+</span></button></div></article>
+          <article class="book-card"><div class="mini-cover cover-blue"><span>THE LAWS<br /><i>OF HUMAN</i><br />NATURE</span><small>ROBERT GREENE</small></div><div class="book-meta"><h3>The Laws of Human Nature</h3><p>Strategy and self-mastery</p><strong>₹89</strong><button class="small-buy buy-button" data-title="The Laws of Human Nature" data-price="89" data-currency="₹" type="button">Add to basket <span>+</span></button></div></article>
+          <article class="book-card"><div class="mini-cover cover-yellow"><span>THE<br /><i>COURAGE</i><br />TO BE<br />DISLIKED</span><small>ICHIRO KISHIMI<br />FUMITAKE KOGA</small></div><div class="book-meta"><h3>The Courage to Be Disliked</h3><p>How to free yourself</p><strong>₹79</strong><button class="small-buy buy-button" data-title="The Courage to Be Disliked" data-price="79" data-currency="₹" type="button">Add to basket <span>+</span></button></div></article>
+        </div>
+      </section>
+
+      <section class="newsletter-section" id="about"><div><p class="eyebrow">The eseller letter</p><h2>A good note,<br /><em>once a month.</em></h2></div><form class="newsletter-form" id="newsletterForm"><label for="email">Notes on books, attention, and the good life.</label><div><input id="email" type="email" placeholder="Your email address" required /><button type="submit" aria-label="Subscribe">→</button></div><p class="form-message" id="formMessage"></p></form></section>
+    </main>
+
+    <footer class="site-footer"><a class="wordmark" href="#top"><span class="wordmark-mark">✦</span> eseller<span class="wordmark-dot">.</span></a><p>Made for the curious.</p><div><a href="#library">Library</a><a href="#about">Contact</a><a href="https://www.instagram.com/p_kboro?igsi=dHluYWE0am9ldXB4">Instagram</a>
+    <a href="https://pin.it/6APH9i0Lx">Pinterest</a></div></footer>
+
+    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true"><section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><button class="modal-close" id="closeModal" type="button" aria-label="Close checkout">×</button><div class="checkout-header"><p class="eyebrow">Secure checkout</p><h2 id="checkoutTitle">Make it yours.</h2></div><div class="order-summary"><div><span id="checkoutBook">Atomic Habits</span><small>Digital edition · instant delivery</small></div><strong id="checkoutPrice">₹99</strong></div><form id="paymentForm"><label>Email address<input type="email" placeholder="you@example.com" required /></label><label>Card details<div class="card-input"><input aria-label="Card number" inputmode="numeric" placeholder="1234 1234 1234 1234" minlength="16" required /><span>VISA</span></div></label><div class="split-fields"><label>Expiry<input placeholder="MM / YY" required /></label><label>CVC<input placeholder="123" required /></label></div><button class="primary-button checkout-button" type="submit">Pay securely <span>→</span></button><p class="secure-note">⌁ Payments are encrypted and processed securely.</p></form><div class="success-message" id="successMessage"><div class="success-icon">✓</div><h3>You’re all set.</h3><p>Your download link is on its way to your inbox.</p><button class="text-link" id="doneButton" type="button">Back to library <span>↗</span></button></div></section></div>
+    <script src="script.js"></script>
+  </body>
+</html>
